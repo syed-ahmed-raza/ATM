@@ -26,11 +26,10 @@ if (pinAnswer.pin === mypin) {
       { name: "amount", message: "Enter Your Amount:", type: "number" },
     ]);
     mybalance -= amountAns.amount;
-    if(amountAns.amount >= mybalance){
+    if (amountAns.amount >= mybalance) {
       console.log("You have not sufficient balance");
-    }else{
-
-      console.log("Your remaining balance is: " + mybalance);     
+    } else {
+      console.log("Your remaining balance is: " + mybalance);
     }
   } else if (operationAns.operation === "Fast Cash") {
     let fastcashAns = await inquirer.prompt([
