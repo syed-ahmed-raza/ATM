@@ -2,8 +2,8 @@
 
 import inquirer from "inquirer";
 
-let mybalance = 10000;
-let mypin = 3952;
+let mybalance = 20000;
+let mypin = 1234;
 
 let pinAnswer = await inquirer.prompt([
   { name: "pin", message: "Enter Your Pin:", type: "number" },
